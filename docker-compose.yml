@@ -1,0 +1,14 @@
+version: '3.3'
+
+services:
+  suministros-web:
+    container_name: suministros-web
+    hostname: suministros-web
+    build: 
+      context: ./ar_suministros
+      dockerfile: Dockerfile
+    image: suministros-web:0.0.1
+    ports:
+      - 82:80
+    restart: always
+  
